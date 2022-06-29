@@ -1,4 +1,4 @@
-package com.example.demo.test;
+package com.example.demo.Util;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -21,7 +21,7 @@ public class ImageBinary extends Canvas {
 
     public ImageBinary() {
         try {
-            bufferedImage = ImageIO.read(new File("D:\\office\\Tesseract\\xl\\ys.png"));
+            bufferedImage = ImageIO.read(new File("D:\\office\\Tesseract\\xl\\n1.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,8 +1,7 @@
-package com.example.demo.core;
+package com.example.demo.Util;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.security.AllPermission;
 import java.util.*;
 
 import net.coobird.thumbnailator.Thumbnails;

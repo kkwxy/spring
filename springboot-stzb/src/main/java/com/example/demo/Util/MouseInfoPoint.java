@@ -1,4 +1,4 @@
-package com.example.demo.core;
+package com.example.demo.Util;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
