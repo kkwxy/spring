@@ -133,7 +133,7 @@ public class ClearImageHelper {
 		for (File file : testDataDir.listFiles()){
 			cleanImage(file, destDir);
 		}*/
-        File testDataDir = new File("D:\\office\\Tesseract\\xl\\1.jpg");//去噪
+        File testDataDir = new File("D:\\office\\Tesseract\\xl\\11.jpg");//去噪
         String destDir = "D:\\office\\Tesseract\\xl";
         cleanImage(testDataDir, destDir);
         //gray("D:\\tmp\\3VG5B.jpg","D:\\tmp\\3VG5B1.jpg");//灰度化

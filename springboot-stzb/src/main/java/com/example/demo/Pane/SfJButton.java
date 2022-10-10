@@ -13,9 +13,12 @@ public class SfJButton extends JButton {
     private static int px, py, w, h;
 
     public SfJButton(JFrame jFrame, PlaceDao.MainPanelDao mainPanelDao) {
-        setText("SF");
         //设置按钮大小
         setBounds(0, 0, 50, 20);
+        ImageIcon ico = new ImageIcon("src/images/sf.jpg");
+        Image temp = ico.getImage().getScaledInstance(this.getWidth(), this.getHeight(), ico.getImage().SCALE_DEFAULT);
+        ico = new ImageIcon(temp);
+        setIcon(ico);
         addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
                 Point point = MouseInfo.getPointerInfo().getLocation();

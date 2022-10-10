@@ -4,6 +4,15 @@ public class PlaceDao {
 
     private MainPanelDao mainPanelDao = new MainPanelDao();
     private ZBJButtion zbJButtion = new ZBJButtion();
+    private GJJButtion gjjButtion = new GJJButtion();
+
+    public GJJButtion getGjjButtion() {
+        return gjjButtion;
+    }
+
+    public void setGjjButtion(GJJButtion gjjButtion) {
+        this.gjjButtion = gjjButtion;
+    }
 
     public ZBJButtion getZbJButtion() {
         return zbJButtion;
@@ -22,6 +31,27 @@ public class PlaceDao {
     }
 
     public class ZBJButtion {
+        private int x;
+        private int y;
+
+        public int getX() {
+            return x;
+        }
+
+        public void setX(int x) {
+            this.x = x;
+        }
+
+        public int getY() {
+            return y;
+        }
+
+        public void setY(int y) {
+            this.y = y;
+        }
+    }
+
+    public class GJJButtion {
         private int x;
         private int y;
 
