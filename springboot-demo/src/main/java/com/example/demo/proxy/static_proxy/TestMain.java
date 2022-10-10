@@ -1,5 +1,11 @@
 package com.example.demo.proxy.static_proxy;
 
+import com.example.demo.proxy.Animal;
+import com.example.demo.proxy.Cat;
+
+/**
+ * 静态代理
+ */
 public class TestMain {
 
     public static void main(String[] args) {

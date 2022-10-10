@@ -1,4 +1,4 @@
-package com.example.demo.proxy.static_proxy;
+package com.example.demo.proxy;
 
 public class Cat implements Animal {
 

@@ -1,5 +1,7 @@
 package com.example.demo.proxy.static_proxy;
 
+import com.example.demo.proxy.Animal;
+
 public class StaticProxyAnimal implements Animal {
 
     private Animal impl;
