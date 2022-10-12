@@ -1,4 +1,4 @@
-package com.example.demo.proxy.dynamic_proxy;
+package com.example.demo.proxy.djk_proxy;
 
 import com.example.demo.proxy.Animal;
 import com.example.demo.proxy.Cat;

@@ -1,18 +1,18 @@
 package com.example.demo.web.controller;
 
-import com.example.demo.web.service.TestService;
+import com.example.demo.web.service.TestAService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class TestController {
+public class TestAController {
 
     @Autowired
-    private TestService testService;
+    private TestAService testAService;
 
-    @RequestMapping("/test")
+    @RequestMapping("/testA")
     public String test() {
-        testService.testA();
+        testAService.testA();
         return "1";
     }
 }
