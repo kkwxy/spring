@@ -1,5 +1,7 @@
 package com.example.demo.web.aop;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -12,6 +14,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class AopConfig {
+
+    private static final Logger logger = LogManager.getLogger();
 
     /**
      * 配置切入点
@@ -30,7 +34,7 @@ public class AopConfig {
      */
     @Around("apoPointCut()")
     public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
-        System.out.println(".........................切点日志.........................");
+        logger.info("================================切点日志.........................");
         // 方法执行
         return joinPoint.proceed();
     }

@@ -1,10 +1,12 @@
 package com.example.demo;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cglib.core.DebuggingClassWriter;
 
 @SpringBootApplication
+@MapperScan("com.example.demo.web.dao")
 public class DemoApplication {
 
     public static void main(String[] args) {

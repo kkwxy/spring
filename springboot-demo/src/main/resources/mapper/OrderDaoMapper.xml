@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.web.dao.OrderDao">
+    <!--
+        CREATE TABLE kkw.t_order (
+        order_id bigint auto_increment NOT NULL,
+        user_id int NOT NULL,
+        address_id bigint NOT NULL,
+        Ctime datetime NULL,
+        CONSTRAINT `PRIMARY` PRIMARY KEY (order_id)
+         ) ENGINE=InnoDB
+        DEFAULT CHARSET=utf8mb3
+        COLLATE=utf8mb3_unicode_ci
+        COMMENT='';
+    -->
+    <select id="getId" resultType="com.example.demo.web.entity.Order">
+        select * from t_order where order_id = #{username}
+    </select>
+</mapper>
